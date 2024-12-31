@@ -13,7 +13,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         require_once 'config.php';
 
-        $username = filter_input(INPUT_POST,'username', FILTER_SANITIZE_STRING);
+        $username = filter_input(INPUT_POST,'username', FILTER_UNSAFE_RAW);
         $password = $_POST['password'];
 
         if ($user_id = verify_login($username, $password)) {

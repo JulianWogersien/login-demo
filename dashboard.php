@@ -28,7 +28,9 @@ if (!isset($_SESSION["user_id"])) {
     <div class="container">
         <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
         <a href="logout.php" class="logout">Logout</a>
-        <p>This is your protected dashboard page.</p>
+        <video width="1920" height="1080" controls>
+            <source src="nvg.mp4" type="video/mp4"
+        </video>
     </div>
 </body>
 </html>
